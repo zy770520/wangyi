@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/header1.css">
+	<script src="../js/jquery.min.js"></script>
+	
+</head>
+<style>
+	html,
+	body {
+		position: relative;
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+	body {
+		background: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+	@media (max-width: 760px) {
+		.swiper-button-next {
+			right: 20px;
+			transform: rotate(90deg);
+		}
+
+		.swiper-button-prev {
+			left: 20px;
+			transform: rotate(90deg);
+		}
+	}
+</style>
+
+<body>
+	<div id="header">
+		<div class="header_top">
+			<div class="g-row">
+				<div class="yhk">
+					<ul>
+						<li>
+							<a href="">
+								用银行卡在严选购物，最高随机直减99元
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- ======================== -->
+				<div class="qy">
+					<a href="" class="login" title="网易严选登陆">
+						登陆/注册
+					</a>
+					<div class="split"></div>
+					<a href="" class="attitude">
+						我的订单
+					</a>
+					<div class="split"></div>
+					<a href="" class="attitude">
+						会员
+					</a>
+					<div class="split"></div>
+					<a href="" class="attitude">
+						甄选家
+					</a>
+					<div class="split"></div>
+					<div class="qiye">
+						<span>
+							企业采购
+						</span>
+						<i></i>
+						<div class="yingcang">
+							<div class="ycnav">
+								<a href="" class="h">企业购</a>
+								<a href="">礼品卡</a>
+								<a href="">联系我们</a>
+							</div>
+						</div>
+					</div>
+					<div class="split"></div>
+					<div class="khfw">
+						<span>客户服务</span>
+						<i></i>
+						<div class="yingcang">
+							<div class="ycnav">
+								<a href="" class="h">帮助中心</a>
+								<a href="">商务合作</a>
+								<a href="">开放平台</a>
+							</div>
+						</div>
+					</div>
+					<div class="split"></div>
+					<div class="app">
+						<i></i>
+						<span>APP</span>
+						<div class="bd">
+							<div class="wrap">
+								<div></div>
+								<p class="text">下载领1000元新人礼包</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =================================================== -->
+		<div class="txt">
+			<div class="t-row">
+				<a href="" class="logo"></a>
+				<div class="con">
+					<a href="" class="gwc">
+						<i class="che"></i>
+						<span class="gw">购物车</span>
+						<i class="sum">0</i>
+					</a>
+					<div class="search">
+						<div class="sea1">
+							<i class="ss"></i>
+							<input type="text">
+							<div class="nr">男/女 温暖船型后包居家拖鞋</div>
+						</div>
+						<div class="sea2">
+							<span>搜索</span>
+						</div>
+						<div class="pm">
+							<div class="pm-center">
+								<div class="pm1">
+									<a>润肌水74折</a>
+									<a>回馈金卡充11得33</a>
+
+									<a>爆款 行李箱</a>
+
+									<a>绍兴黄酒58元</a>
+
+								</div>
+								<div class="pm1">
+									<a>日式香薰机 直减50</a>
+									<a>11.11预售盛典</a>
+
+									<a>便携饭盒</a>
+
+									<a>擦手巾</a>
+									<a>润肌水74折</a>
+								</div>
+								<div class="pm1">
+									<a>润肌水74折</a>
+									<a>回馈金卡充11得33</a>
+
+									<a>爆款 行李箱</a>
+
+									<a>绍兴黄酒58元</a>
+
+								</div>
+							</div>
+						</div>
+						<!-- <div class="sea3">
+                            <div class="swiper-container" id="container3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="">润肌水74折</a>
+                                        <a href="" class="act">回馈金卡充11得33</a>
+                                        <a href="">爆款 行李箱</a>
+                                        <a href="" style="border-right: 0;">绍兴黄酒58元</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">日式香薰机 直减50</a>
+                                        <a href="">11.11预售盛典</a>
+                                        <a href="">便携饭盒</a>
+                                        <a href="">擦手巾</a>
+                                        <a href="" style="border-right: 0;">润肌水74折</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">润肌水74折</a>
+                                        <a href="" class="act">回馈金卡充11得33</a>
+                                        <a href="">爆款 行李箱</a>
+                                        <a href="" style="border-right: 0;">绍兴黄酒58元</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+					</div>
+				</div>
+				<div class="menu">
+					<ul class="uul">
+						<!-- <li style="margin-left: -30px;" class="lli"><a href="#">首页</a></li> -->
+						<!-- <li><a href="#">居家生活</a>
+							<div class="menu_xl">
+								<div class="menu_xl_li">
+									<p>
+										夏凉好物
+									</p>
+									<ol>
+										<em><img src="../img/e48caa07a8ba179f542f428102cb7b71.png">夏凉热卖</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">主题床品</em>
+										<em><img src="../img/bef3b6ec3a1d1b8ec3476ec2d5aa7a3a.png">北欧原木</em>
+										<em><img src="../img/3fc9015f3ccebba3f34b06024b923a98.png">餐厨系列</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										床上用品
+									</p>
+									<ol>
+										<em><img src="../img/6eeaa813566307004ff88f1013bf08fe.png">床品件套</em>
+										<em><img src="../img/db9cd0d90269244c7167d18db493ec51.png">被枕盖毯</em>
+										<em><img src="../img/64d736388656705f5ba7a0ab8b3c0945.png">床垫床褥</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家居饰品
+									</p>
+									<ol>
+										<em><img src="../img/0da6f3d513e36c12eabad86a3e0607e7.png">抱枕靠垫</em>
+										<em><img src="../img/3ab796d975584201ffe8f6c0123ba8bb.png">家饰</em>
+										<em><img src="../img/542fa9f88f195d5c738c30c72f7f865b.png">居家布艺</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家具家装
+									</p>
+									<ol>
+										<em><img src="../img/e8e017d7b6d53abdbcfc2b4d9d464f7f.png">客餐厅家具客</em>
+										<em><img src="../img/b96c03936142b1ccbbf57144a1bec8ef.png">卧室家具</em>
+										<em><img src="../img/51b15acb5aadf019452a1543b430912e.png">办公书房家具</em>
+										<em><img src="../img/f44e2cb4a1250b1dbcb59aecd6de699b.png">小件家具</em>
+										<em><img src="../img/f44e2cb4a1250b1dbcb59aecd6de699b.png">灯具</em>
+										<em><img src="../img/1853975628f115fcfafed57403e02e14.png">地毯窗帘</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										收纳日用
+									</p>
+									<ol>
+										<em><img src="../img/366989e4d730594e86fcd60b5ab19acc.png">收纳</em>
+										<em><img src="../img/0f79023e7f171c6e0414cd45e1b717fc.png">晾晒除味</em>
+										<em><img src="../img/33386fcdceac29764fc9d9923150d665.png">毛巾浴巾</em>
+										<em><img src="../img/959b248bb648a6737ef4eca56e2962f5.png">居家拖鞋</em>
+										<em><img src="../img/de6518ab55b39bf19610c2b301965f79.png">家庭医疗</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										厨房用品
+									</p>
+									<ol>
+										<em><img src="../img/0ee675cc78ad0d4802bc4df7c3432194.png">锅具</em>
+										<em><img src="../img/95ad15a6b2cb7881d1fd687594aab419.png">餐厨配件</em>
+										<em><img src="../img/6a77d9c34ad966dc90be25de51186f02.png">刀剪砧板</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										餐具水具
+									</p>
+									<ol>
+										<em><img src="../img/2dc44d85e10ad1f5b68bb0b5b1b4cbb5.png">餐具</em>
+										<em><img src="../img/45b50d5f8afbd6fdef97314647dcb7db.png">水具杯壶</em>
+										<em><img src="../img/3102b963e7a3c74b9d2ae90e4380da65.png">茶咖酒具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										宠物生活
+									</p>
+									<ol>
+										<em><img src="../img/b42a85ef15f856081ea9f49e5f6893e2.png">宠物食品</em>
+										<em><img src="../img/e766b09029ca00680d1e651b5cdc42bd.png">宠物用品</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">服饰鞋包</a>
+							<div class="menu_xl" style="height: 457px;">
+								<div class="menu_xl_li">
+									<p>
+										当季热销
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">热卖爆款</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">人气新品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">抄底特惠</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										男装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式T恤/POLO</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式衬衫</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式裤装</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式牛仔</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式针织衫/卫衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式外套</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										女装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式T恤/POLO</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式衬衫</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式裙装</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式裤装</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式牛仔</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式针织衫/卫衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式外套</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										居家内衣
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式家居服</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式家居服</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式内裤</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式内裤</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女式内衣/文胸</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式内衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">短袜/裤袜</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										鞋靴
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男鞋男鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女鞋女鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">拖鞋拖鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">鞋配鞋配</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										箱包
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女士包袋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男士包袋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">钱包及小皮件</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">行李箱</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										首饰配件
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">奢华珠宝</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">时尚饰品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">腰带腕表</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">帽子发饰</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">眼镜墨镜</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">围巾手套</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										系列特辑
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">免烫系列</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">棉麻系列</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">真丝系列</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">莫代尔系列</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">几何森林</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">美食酒水</a>
+							<div class="menu_xl" style="height: 350px;">
+								<div class="menu_xl_li">
+									<p>
+										精选美食
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">中秋好礼</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">新品首发</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">好味精选</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										休闲零食
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">饼干糕点</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">小食糖巧</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">肉类零食</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										坚果蜜饯
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">坚果炒货</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">蜜饯果干</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										冲饮茗茶
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">冲调饮品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">传统茗茶</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">茗茶礼盒</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">茶包花茶</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										滋补保健
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">滋补食材</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">保健品</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										酒水饮料
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">乳品饮料</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">酒类</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">名酒馆</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										粮油调味
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">米面粮油</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">方便食品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">南北干货</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">调味酱菜</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										生鲜特色
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">水果蔬菜</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">肉蛋海鲜</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">冷冻冷藏</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">网易黑猪</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">海外美食</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">个护清洁</a>
+							<div class="menu_xl" style="height: 350px;">
+								<div class="menu_xl_li">
+									<p>
+										好物精选
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">爆款榜单</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">新品尝鲜</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										面部护理
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">基础护肤</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">卸妆洁面</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">护肤工具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										个人护理
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">洗发护发</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">身体护理</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">口腔护理</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女性护理</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										彩妆香水
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">彩妆修容</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">香水香氛</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">美妆工具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										个护电器
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">口腔护理电器</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">面部护理电器</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">头发护理电器</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">身体护理电器</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										纸品清洁
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">纸品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">湿巾</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家清卫浴
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">衣物护理</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家庭清洁</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐厨清洁</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">毛巾浴巾</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">浴室用品</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										成人用品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">避孕套</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">女用情趣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男用情趣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">润滑液</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">母婴亲子</a>
+							<div class="menu_xl" style="height: 404px;">
+								<div class="menu_xl_li">
+									<p>
+										婴童精选
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">必买好货</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">五折封顶</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">囤货精选</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">开学好物</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">初秋精选</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">礼品甄选</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										童装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">上衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">下装</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">裙装</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">爬服连体衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">套装礼盒</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">内衣/配搭</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										童鞋
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">儿童鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">学步鞋</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										洗护喂养
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">尿裤纸品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">洗护</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">喂养</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										孕产妈咪
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">孕产内衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">妈咪用品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">孕妈装</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										玩具图书
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">玩具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">图书</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										童包出行
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">推车/童车</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">安全座椅</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">童包</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">儿童雨具/泳具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										婴童寝居
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">婴童床品套件</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">婴童被枕芯类</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">抱被睡袋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">儿童家具收纳</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">运动旅行</a>
+							<div class="menu_xl">
+								<div class="menu_xl_li">
+									<p>
+										当季热销
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">Yessing</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">夏季清凉防晒</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">瑜伽系列</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">出行好物</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										运动男装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式运动T恤</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式运动外套/卫衣</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">男式运动裤装</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										运动女装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">抱枕靠垫</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家饰家饰</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">居家布艺</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家具家装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">客餐厅家具客</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">卧室家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">办公书房家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">小件家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">灯具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">地毯窗帘</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										收纳日用
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">收纳</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">晾晒除味</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">毛巾浴巾</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">居家拖鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家庭医疗</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										厨房用品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">锅具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐厨配件</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">刀剪砧板</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										餐具水具
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">水具杯壶</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">茶咖酒具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										宠物生活
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">宠物食品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">宠物用品</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">数码家电</a>
+							<div class="menu_xl">
+								<div class="menu_xl_li">
+									<p>
+										夏凉好物
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">夏凉热卖</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">主题床品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">北欧原木</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐厨系列</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										床上用品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">床品件套</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">被枕盖毯</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">床垫床褥</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家居饰品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">抱枕靠垫</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家饰家饰</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">居家布艺</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家具家装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">客餐厅家具客</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">卧室家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">办公书房家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">小件家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">灯具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">地毯窗帘</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										收纳日用
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">收纳</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">晾晒除味</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">毛巾浴巾</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">居家拖鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家庭医疗</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										厨房用品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">锅具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐厨配件</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">刀剪砧板</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										餐具水具
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">水具杯壶</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">茶咖酒具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										宠物生活
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">宠物食品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">宠物用品</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">全球特色</a><span>|</span>
+							<div class="menu_xl">
+								<div class="menu_xl_li">
+									<p>
+										夏凉好物
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">夏凉热卖</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">主题床品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">北欧原木</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐厨系列</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										床上用品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">床品件套</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">被枕盖毯</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">床垫床褥</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家居饰品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">抱枕靠垫</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家饰家饰</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">居家布艺</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										家具家装
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">客餐厅家具客</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">卧室家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">办公书房家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">小件家具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">灯具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">地毯窗帘</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										收纳日用
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">收纳</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">晾晒除味</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">毛巾浴巾</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">居家拖鞋</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">家庭医疗</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										厨房用品
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">锅具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐厨配件</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">刀剪砧板</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										餐具水具
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">餐具</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">水具杯壶</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">茶咖酒具</em>
+									</ol>
+								</div>
+								<div class="menu_xl_li">
+									<p>
+										宠物生活
+									</p>
+									<ol>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">宠物食品</em>
+										<em><img src="../img/5a165042f413da1d6a01a25de0a65952.png">宠物用品</em>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">为你严选</a></li>
+						<li><a href="#">众筹</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/header1.js"></script>
+<script>
+	var swiper3 = new Swiper('#container3', {
+		slidesPerView: "auto",
+		direction: getDirection1(),
+		loop: true,
+		autoplay: {
+			delay: 1000,
+			stopOnLastSlide: false,
+			disableOnInteraction: true
+		},
+		on: {
+			resize: function () {
+				swiper3.changeDirection(getDirection1());
+			}
+		}
+	});
+
+	function getDirection1() {
+		var windowWidth = window.innerWidth;
+		var direction1 = window.innerWidth <= 760 ? 'horizontal' : 'vertical';
+
+		return direction1;
+	}
+
+</script>
+
+<script src="../js/ajax.js"></script>
+
+</html>
